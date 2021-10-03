@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css"/>
+    <title>Home page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="bg"> 
+    <section id="intro-section">
+        <h1 id="title">
+            <span class="letter-default">G</span>
+            <span class="letter-default">u</span>
+            <span class="letter-default">s</span>
+            <span class="letter-default">t</span>
+            <span class="letter-default">a</span>
+            <span class="letter-default">v</span>
+            <p class="letter-default">Ett äventyr i ost och råttgift</p>
+        </h1>
+    </section>
+    <section id="left-section">
+        <h1>Placeholder header</h1>
+        <p>Expedita velit, sint voluptas amet fugiat recusandae aut harum inventore nam consequatur laboriosam est vitae quos nisi libero ea quisquam? Ut omnis minima nostrum alias, a eveniet laborum in veniam.</p>
+    </section>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="url(#grad1)" fill-opacity="1" d="M0,192L16,202.7C32,213,64,235,96,218.7C128,203,160,149,192,122.7C224,96,256,96,288,80C320,64,352,32,384,53.3C416,75,448,149,480,176C512,203,544,181,576,149.3C608,117,640,75,672,90.7C704,107,736,181,768,218.7C800,256,832,256,864,218.7C896,181,928,107,960,74.7C992,43,1024,53,1056,53.3C1088,53,1120,43,1152,58.7C1184,75,1216,117,1248,128C1280,139,1312,117,1344,117.3C1376,117,1408,139,1424,149.3L1440,160L1440,320L1424,320C1408,320,1376,320,1344,320C1312,320,1280,320,1248,320C1216,320,1184,320,1152,320C1120,320,1088,320,1056,320C1024,320,992,320,960,320C928,320,896,320,864,320C832,320,800,320,768,320C736,320,704,320,672,320C640,320,608,320,576,320C544,320,512,320,480,320C448,320,416,320,384,320C352,320,320,320,288,320C256,320,224,320,192,320C160,320,128,320,96,320C64,320,32,320,16,320L0,320Z"></path>
+        <defs>
+            <linearGradient id="grad1" x1="0%" y1="100%" x2="0%" y2="0%">
+              <stop offset="0%" style="stop-color:rgba(63,94,251,1);stop-opacity:1" />
+              <stop offset="72%" style="stop-color:rgba(163,81,175,1);stop-opacity:1" />
+            </linearGradient>
+          </defs>
+    </svg>
+
+</div>
+
+
+
+<div class="socials">      
+    <section>
+        <section style="text-align: center;">
+            <h1> My social media</h1>
+            <a class="sm" style="left: 15%;" href="https://www.instagram.com/"><img src="icons8-instagram.svg"></a>
+            <a class="sm" style="left: 45%;" href="https://www.reddit.com/"><img src="icons8-reddit.svg"></a>
+            <a class="sm" style="left: 75%;" href="https://www.github.com/"><img src="icons8-github.svg"></a>
+        </section>
+    </section>
+</div>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  test();
+});
+
+    async function test() {
+    
+        await new Promise(r => setTimeout(r, 300));
+
+    const el = document.getElementById('title');
+    const delay = 250;
+
+    for (let i = 0; i < el.children.length; i++) {
+        const element = el.children[i];
+        element.setAttribute("class", "letter-anim");
+        await new Promise(r => setTimeout(r, delay));
+    }
+}
+</script>
+
+</body>
+</html>
