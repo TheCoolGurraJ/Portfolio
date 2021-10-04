@@ -23,7 +23,7 @@
             <span class="letter-default">t</span>
             <span class="letter-default">a</span>
             <span class="letter-default">v</span>
-            <p class="letter-default">Ett äventyr i ost och råttgift</p>
+            <p class="letter-default"><i>Software developer</i></p>
         </h1>
     </section>
     <section id="left-section">
@@ -73,6 +73,9 @@ document.addEventListener("DOMContentLoaded", function() {
         element.setAttribute("class", "letter-anim");
         await new Promise(r => setTimeout(r, delay));
     }
+
+    const intro = document.getElementById('intro-section');
+    intro.setAttribute("class", "remove-anim");
 }
 </script>
 
